@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="12.0.1" />
+		<PackageReference Include="MediatR" Version="12.0.1" />
+		<PackageReference Include="Polly" Version="7.2.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\TaskManagement.Contracts\TaskManagement.Contracts.csproj" />
+		<ProjectReference Include="..\TaskManagement.Messages\TaskManagement.Messages.csproj" />
+		<ProjectReference Include="..\TaskManagement.Persistence\TaskManagement.Persistence.csproj" />
+		<ProjectReference Include="..\TaskManagement.ServiceBus\TaskManagement.ServiceBus.csproj" />
+	</ItemGroup>
+
+</Project>

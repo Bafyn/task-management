@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  rabbitmq:
+    image: "rabbitmq:3-management"
+    hostname: "rabbitmq-host"
+    environment:
+      RABBITMQ_DEFAULT_USER: "admin"
+      RABBITMQ_DEFAULT_PASS: "Secure@Password123" # Use .env files to override the value instead of specifying it here
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    hostname: "sql-server"
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "Secret@Password123"
+    ports:
+      - "1450:1433"
