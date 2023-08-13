@@ -1,4 +1,4 @@
-# Task Management App
+# Task Management App [coding challenge]
 
 The application allows users to perform the following tasks:
 1. Add new tasks
